@@ -9,23 +9,28 @@ const NavBar = () => {
     const links = [
         {
             id: 1,
-            link: 'home'
+            link: 'home',
+            style: 'hover:text-blue-600'
         },
         {
             id: 2,
-            link: 'about'
+            link: 'about',
+            style: 'hover:text-pink-500'
         },
         {
             id: 3,
-            link: 'portfolio'
+            link: 'portfolio',
+            style: 'hover:text-[#6fc2b0]'
         },
         {
             id: 4,
-            link: 'experiance'
+            link: 'experiance',
+            style: 'hover:text-pink-800'
         },
         {
             id: 5,
-            link: 'contact'
+            link: 'contact',
+            style: 'hover:text-sky-600'
         }
 ]
 
@@ -33,14 +38,14 @@ const NavBar = () => {
   return (
       <div className='flex justify-between items-center bg-[#0a192f] w-full h-20 text-white px-4 fixed'>
           <div>
-              <h1 className='font-signature text-5xl ml-2'>Arif</h1>
+              <h1 className='font-signature text-5xl ml-2 text-pink-500'>Arif</h1>
           </div>
           <ul className='hidden md:flex'>
             
-              {links.map(({id, link}) => (
+              {links.map(({id, link, style}) => (
                   <li
                       key={id}
-                      className='p-4 cursor-pointer font-medium text-white capitalize hover:scale-105 duration-200'>
+                      className={`p-4 cursor-pointer font-medium text-white capitalize hover:scale-110 duration-200 ${style}`}>
                       <Link
                           to={link} smooth duration={500}>
                           {link}

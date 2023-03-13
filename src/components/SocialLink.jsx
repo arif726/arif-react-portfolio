@@ -16,7 +16,7 @@ const SocialLink = () => {
                 </>
             ),
             href: 'https://www.linkedin.com/in/nasimuddinarif/',
-            style: 'rounded-tr-md'
+            style: 'rounded-tr-md bg-blue-600'
         },
         {
             id: '2',
@@ -26,15 +26,17 @@ const SocialLink = () => {
                 </>
             ),
             href: 'https://github.com/arif726',
+            style: 'bg-[#333333]'
         },
         {
             id: '3',
             child: (
                 <>
-                     Mail<HiOutlineMail size={30}/>
+                     Email<HiOutlineMail size={30}/>
                 </>
             ),
-            href: 'mailto:akonarif3@gmail.com'
+            href: 'mailto:akonarif3@gmail.com',
+            style: 'bg-[#6fc2b0]'
         },
         {
             id: '4',
@@ -44,7 +46,7 @@ const SocialLink = () => {
                 </>
             ),
             href: '/Arif_CV_(EEE).pdf',
-            style: 'rounded-br-md',
+            style: 'rounded-br-md bg-pink-800',
             download: true
         },
 ]
