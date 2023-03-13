@@ -5,11 +5,16 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLink from "./components/SocialLink";
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
     
     <div>
+      
       <NavBar />
       <Home />
       <About />
@@ -18,6 +23,7 @@ function App() {
       <Contact/>
 
       <SocialLink/>
+    
     </div>
 
   )

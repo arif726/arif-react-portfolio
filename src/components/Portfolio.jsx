@@ -33,13 +33,15 @@ const Portfolio = () => {
   return (
       <div
           name='portfolio'
-          className='w-full bg-gradient-to-b from-black to-gray-800 text-white md:h-screen'>
-          <div className='p-4 mx-auto max-w-screen-lg w-full h-full flex flex-col justify-center'>
+          className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+          <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
               <div className='pb-8'>
-                  <p className='text-4xl font-bold border-b-4 border-gray-500 inline'>Portfolio</p>
+                  <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
+                      Portfolio
+                  </p>
                   <p className='py-6'>Here checkout some of my work</p>
               </div>
-              <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+              <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
                   
                   {
                       portfolios.map(({ id, src }) => (
@@ -49,7 +51,7 @@ const Portfolio = () => {
                       <img
                           src={src}
                           alt=""
-                          className='rounded-md hover:scale-105 duration-500 cursor-pointer'
+                          className='rounded-md hover:scale-105 duration-500'
                       />
                       <div className='flex items-center justify-center'>
                           <a
@@ -57,8 +59,8 @@ const Portfolio = () => {
                               rel='noreferrer'
                               href="https://www.google.com/">
                               <button
-                                  className='w-1/2 px-6 m-4 hover:scale-105 duration-500'>
-                                  Demo
+                                  className='w-1/2 px-6 m-4 hover:scale-110 hover:font-semibold duration-500'>
+                                  Code
                               </button>
                           </a>
                           <a
@@ -66,8 +68,8 @@ const Portfolio = () => {
                               rel='noreferrer'
                               href="https://www.google.com/">
                               <button
-                                  className='w-1/2 px-6 m-4 hover:scale-105 duration-500'>
-                                  Code
+                                  className='w-1/2 px-6 m-4 hover:scale-110 hover:font-semibold duration-500'>
+                                  Live
                               </button>
                           </a>
                       </div>
