@@ -1,32 +1,49 @@
 import React from 'react';
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
-import navbar from '../assets/portfolio/navbar.jpg';
-import reactParallax from '../assets/portfolio/reactParallax.jpg';
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
-import reactWeather from '../assets/portfolio/reactWeather.jpg';
+import portfolio from '../assets/portfolio/portfolio.jpg';
+import reactjs from '../assets/portfolio/reactjs.jpg';
+import quizjs from '../assets/portfolio/quiz-js.jpg';
+import MacPurchasesite from '../assets/portfolio/Mac Purchase site.jpg';
+import javascript from '../assets/portfolio/javascript.jpg';
+import bootstrap from '../assets/portfolio/bootstrap.jpg';
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id: '1',
-            src: arrayDestruct
+            src: portfolio,
+            code: 'https://github.com/arif726/my-',
+            live: ''
         },
         {
             id: '2',
-            src: navbar
+            src: reactjs,
+            code: 'https://github.com/arif726/ema-jon-react-project',
+            live: ''
         },
         {
             id: '3',
-            src: reactParallax
+            src: quizjs,
+            code: 'https://github.com/arif726/js-quiz-app',
+            live: 'https://famous-biscotti-f1539e.netlify.app/'
         },
         {
             id: '4',
-            src: reactSmooth
+            src: MacPurchasesite,
+            code: 'https://github.com/arif726/my-',
+            live: 'https://macbook-pc-buy.netlify.app'
         },
         {
             id: '5',
-            src: reactWeather
+            src: javascript,
+            code: 'https://github.com/arif726/Vanila_JS_ImageSlider',
+            live: ''
+        },
+        {
+            id: '6',
+            src: bootstrap,
+            code: 'https://github.com/arif726/my-portfolio-website',
+            live: 'https://portfolio-html-bootstrap.netlify.app'
         },
 ]
 
@@ -44,7 +61,7 @@ const Portfolio = () => {
               <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
                   
                   {
-                      portfolios.map(({ id, src }) => (
+                      portfolios.map(({ id, src, code, live }) => (
                           <div
                               key={id}
                               className='shadow-md shadow-gray-600 rounded-lg'>
@@ -57,7 +74,7 @@ const Portfolio = () => {
                           <a
                               target='_blank'
                               rel='noreferrer'
-                              href="https://www.google.com/">
+                              href={code}>
                               <button
                                   className='w-1/2 px-6 m-4 hover:scale-110 hover:font-semibold duration-500'>
                                   Code
@@ -66,7 +83,7 @@ const Portfolio = () => {
                           <a
                               target='_blank'
                               rel='noreferrer'
-                              href="https://www.google.com/">
+                              href={live}>
                               <button
                                   className='w-1/2 px-6 m-4 hover:scale-110 hover:font-semibold duration-500'>
                                   Live
