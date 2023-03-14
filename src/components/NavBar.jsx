@@ -20,7 +20,7 @@ const NavBar = () => {
         {
             id: 3,
             link: 'portfolio',
-            style: 'hover:text-[#6fc2b0]'
+            style: 'hover:text-[#6FC2B0]'
         },
         {
             id: 4,

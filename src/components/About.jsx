@@ -1,4 +1,5 @@
 import React from 'react';
+import { HiOutlineCloudDownload } from 'react-icons/hi';
 
 const About = () => {
   return (
@@ -23,7 +24,21 @@ const About = () => {
               way to large enterprise corporations. What would you do if you had
               a software expert available at your fingertips?</p>  
             </div>
-          </div>
+        </div>
+        
+        <button>
+          <a
+            href='/Arif_CV_(EEE).pdf'
+            download='true'
+            target='_blank'
+            rel='noreferrer'
+            className='text-white group border-2 px-6 py-3 my-6 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+            Download CV
+            <span>
+              <HiOutlineCloudDownload className='ml-3 ' />
+            </span>
+            </a>
+          </button>
       </div>
     </div>
   );

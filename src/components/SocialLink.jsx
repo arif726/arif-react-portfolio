@@ -16,7 +16,7 @@ const SocialLink = () => {
                 </>
             ),
             href: 'https://www.linkedin.com/in/nasimuddinarif/',
-            style: 'rounded-tr-md bg-blue-600'
+            style: 'rounded-tr-md bg-sky-600'
         },
         {
             id: '2',
@@ -26,7 +26,7 @@ const SocialLink = () => {
                 </>
             ),
             href: 'https://github.com/arif726',
-            style: 'bg-[#333333]'
+            style: 'bg-gray-600'
         },
         {
             id: '3',
@@ -36,7 +36,7 @@ const SocialLink = () => {
                 </>
             ),
             href: 'mailto:akonarif3@gmail.com',
-            style: 'bg-[#6fc2b0]'
+            style: 'bg-[#6FC2B0]'
         },
         {
             id: '4',
